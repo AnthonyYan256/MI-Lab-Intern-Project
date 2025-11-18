@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "MI Lab Intern Project.sln"
+    "dotnet.defaultSolution": "MI-Lab-Intern-Project.sln"
 }

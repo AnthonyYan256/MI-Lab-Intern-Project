@@ -12,10 +12,15 @@ public class MicrogestureListener : MonoBehaviour
         ovrMicrogestureEventSource = GetComponent<OVRMicrogestureEventSource>();
         ovrMicrogestureEventSource.GestureRecognizedEvent.AddListener(g =>
         {
-            var message = $"Microgesture event received: {g}";
-            // SpatialLogger.Instance.LogInfo(message);
-            Debug.Log(g);
+            LogMicrogestureEvent($"{g}");
         });
+    }
+
+    public void LogMicrogestureEvent(string microgestureName)
+    {
+            var message = $"Microgesture event received: {microgestureName}";
+            // SpatialLogger.Instance.LogInfo(message);
+            Debug.Log(microgestureName);
     }
 
     // Update is called once per frame
