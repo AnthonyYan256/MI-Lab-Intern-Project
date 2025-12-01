@@ -24,6 +24,11 @@ public class MyGestureHandler : MonoBehaviour
         // Use a switch statement to handle the different gestures
         switch (gesture)
         {
+            case OVRHand.MicrogestureType.NoGesture:
+                Debug.Log("GESTURE: Swipe Left");
+                // Add your "turn left" code here
+                break;
+            
             case OVRHand.MicrogestureType.SwipeLeft:
                 Debug.Log("GESTURE: Swipe Left");
                 // Add your "turn left" code here
@@ -47,6 +52,11 @@ public class MyGestureHandler : MonoBehaviour
             case OVRHand.MicrogestureType.SwipeBackward:
                 Debug.Log("GESTURE: Swipe Backward");
                 // Add your "move backward" code here
+                break;
+
+            case OVRHand.MicrogestureType.Invalid:
+                Debug.Log("GESTURE: Swipe Left");
+                // Add your "turn left" code here
                 break;
         }
 
